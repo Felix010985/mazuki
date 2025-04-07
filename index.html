@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazuki Client</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #7F00FF, #00BFFF);
+      color: #fff;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+	  backdrop-filter: blur(10px); 
+	  -webkit-backdrop-filter: blur(10px);
+      padding: 15px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    section {
+      padding: 100px 20px 60px;
+      min-height: 100vh;
+    }
+    .section-1 { background: rgba(0, 0, 0, 0.2); }
+    .section-2 { background: rgba(0, 0, 0, 0.1); }
+    .section-3 { background: rgba(0, 0, 0, 0.2); }
+    h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#section1">Главная</a>
+      <a href="#section2">Скачать</a>
+      <a href="#section3">Контакты</a>
+    </nav>
+  </header>
+  
+  <section id="section1" class="section-1">
+    <h1>Добро пожаловать</h1>
+    <p>Это Mazuki Client, программа позволяющая запускать приложения HTML как программы!</p>
+    <img src="data/screen.png" alt="Что то пошло не так">
+  </section>
+  
+  <section id="section2" class="section-2">
+    <h1>Скачать</h1>
+  <a href="https://download1078.mediafire.com/zn38mvu8y06gXaWi3J4mDyuQ1KOGkm2VURKkPFAVcUeZmz-vV6UoldvHeCbtRdk5nu3NUGy-NsLf8PzC1086XPxOMQGFFHbBnGofOsXVfvv3mAr2gudewLhjhLXM8ZW7A0iTjMOuRcQnHGvB8tJgdXW43y0bQJTpWgcJw6VWog/95cuc9cd62niv0g/MazukiClient.rar" download>
+    <button style="
+    background-color: #28a745;
+    color: white;
+    padding: 18px 36px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+  "
+  onmouseover="this.style.backgroundColor='#218838'; this.style.transform='scale(1.05)'"
+  onmouseout="this.style.backgroundColor='#28a745'; this.style.transform='scale(1)'">
+    📥 Скачать Mazuki Client
+    </button>
+  </a>
+  </section>
+  
+  <section id="section3" class="section-3">
+    <h1>Контакты</h1>
+    <p>Свяжитесь с нами для получения дополнительной информации или сотрудничества. Спасибо за внимание!</p>
+    <div>Ютуб канал FelixProfi<div>
+  </section>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log("Интерфейс загружен");
+    });
+  </script>
+</body>
+</html>
